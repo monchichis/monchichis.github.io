@@ -26,6 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
 
   <!-- =======================================================
   * Template Name: iPortfolio - v1.5.1
@@ -35,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body>
+<body onload="awal()">
 
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -337,7 +338,13 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 
+  <script type="text/javascript">
+    function awal(){
+      Swal.fire('Hello','Selamat Ujian','info');
+    }
+  </script>
 </body>
 
 </html>
